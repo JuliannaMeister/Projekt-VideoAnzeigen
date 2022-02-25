@@ -1,26 +1,25 @@
 # Projekt-VideoAnzeigen
 Projekt VideoAnzeigen
-/* 
-Cookie wird gesetzt und gelesen aus den ersten Inputs
+/*Cookie is set and read from the first inputs.
 
-Es werden Daten aus einem Json File geholt, die jeweils den Titel eines Filmes als Key sowie die URL als Value enthalten.Das Json-File wurde manuell erstellt und beinhaltet leider nur 2 Zeilen
+ Data is fetched from a Json file, each containing the title of a film as a key and the URL as a value. The Json file was created manually and unfortunately only contains 2 lines.
 
-Der Dom wird verändert und es werden onClick-Händler eingebaut um die DIVs zu öffnen (toggler[i].onclick = function). Ursprünglich machten wir dies mit EventListener (  toggler[i].addEventListener("click", function ())
+ The dome is changed and onClick traders are added to open the DIVs (toggler[i].onclick = function). Originally, we did this with EventListener ( toggler[i].addEventListener("click", function ()).
 
-Es werden Daten aus einem HTML-Snippet geholt als HTML. In dem Snippet wird im "Speicher" der String verändert (einbauTeil1 + dieURL + einbauTeil2) und das Video ausgetauscht.
+ Data is fetched from an HTML snippet as HTML. In the snippet, the string is changed in the "memory" (insertPart1 + theURL + insertPart2) and the video is replaced.
 
-Der DOM im Dokument wird verändert (container.innerHTML = alles). 
-Dann werden Event-Händler an die Inputs vor den Filmen gehängt werden. Diese funktionieren aber nicht wie gehofft.
+ The DOM in the document is changed (container.innerHTML = all). 
+ Then event handlers will be attached to the inputs before the movies. However, these do not work as hoped.
 
 
-Ende erstes Projekt
+ End first project
 
-Wir enden das erste Projekt, da wir mit dem bisherigen Konzept nur nested-Handler erzeugen können und deshallb nicht an die inneren Inputs kommen ohne das das Parent-Element wieder verschwindet.
+ We end the first project, because with the previous concept we can only create nested handlers and therefore cannot get to the inner inputs without the parent element disappearing again.
 
-Zweites Projekt:
-Wir sehen eine Ersatz-Möglichkeit: wir bauen den Dom mit allen Videos am Anfang auf und setzen die Handler mit j_Query - parallel. Die Elemente sind nicht sichtbar wie bisher. Aber dazu müssen wir komplett neu anfangen und verheddern und vielleicht.
+ Second project:
+ We see a replacement possibility: we build the dome with all videos at the beginning and set the handlers with j_Query - in parallel. The elements are not visible as before. But for that we have to start completely new and get tangled up and maybe.
 
-Deshalb würden wir lieber ein zweites Teilprojekt machen und statt die Videos und deren URLS manuell zu setzen, diese aus dem DOM auszulesen und abzulegen. Damit würde Projekt 1 etwas "Größer" - mehr Daten.
+ So we would rather do a second sub-project and instead of setting the videos and their URLS manually, read them from the DOM and store them. This would make project 1 a little "bigger" - more data.
 */
 "use strict"
 
